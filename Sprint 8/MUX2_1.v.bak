@@ -1,0 +1,6 @@
+module MUX2_1(input [7:0] A, B, 
+				  input S, 
+              output reg [7:0] X);
+ 
+	assign X = (S) ? B : A; 
+endmodule 

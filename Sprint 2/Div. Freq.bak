@@ -1,0 +1,16 @@
+module Cont_M10(input clk, rst, 
+					 output reg [3:0] cont);
+
+	always @(posedge clk)
+		begin
+		if(!rst)
+		cont = 9; //para voltar pro zero
+		else
+			begin
+			if(cont == 0)
+			cont = 9;
+			else
+			cont = cont - 1;
+		end
+	end
+endmodule 

@@ -1,0 +1,35 @@
+module decoder
+(input [3:0] 4_bits, output reg [6:0] display);
+always @(*)
+begin
+        case(4_bits)
+            4'b0000: display = 7'b1111110;
+            4'b0001: display = 7'b0110000;
+            4'b0010: display = 7'b1101101;
+            4'b0011: display = 7'b1111001;
+            4'b0100: display = 7'b0110011;
+            4'b0101: display = 7'b1011011;
+            4'b0110: display = 7'b0011111;
+            4'b0111: display = 7'b1110000;
+            4'b1000: display = 7'b1111111;
+            4'b1001: display = 7'b1110011;
+            default: display = 7'b0000000;
+        endcase
+    end
+endmodule
+
+
+//module decoder_Hexa_7seg(input [3:0] Hexa,
+//								 input [1:0] Sel,
+//								 output reg [3:0] _7seg);	
+//	always @(*) begin
+//		case(Hexa)
+//			4'b0000: _7seg = 7'b1111110; //0
+//			4'b0001: _7seg = 7'b0110000; //1
+//			4'b0010: _7seg = 7'b1101101; //2
+//			4'b0011: _7seg = 7'b1111001; //3
+//			4'b0100: _7seg = 7'b1001111; //4
+//		endcase
+//		end
+//		endmodule
+

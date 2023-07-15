@@ -1,0 +1,14 @@
+module divide_frequency(input Clk_1Hz, output reg new_Clk_1Hz);
+reg [25:0] Clk_50MHz;
+always @(posedge Clk_1Hz)
+begin
+	if (Clk_50MHz== 25000000) 
+	begin
+		new_Clk_1H= ~new_Clk_1H; /inverte
+		Clk_50MHz= 0;
+	end
+	else
+	Clk_50MHz= Clk_50MHz + 1;
+end
+endmodule	
+

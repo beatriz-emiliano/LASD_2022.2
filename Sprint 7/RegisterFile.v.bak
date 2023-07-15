@@ -1,0 +1,56 @@
+module RegisterFile(
+	input [7:0] wd3, //Write Data
+	input clk, we3,  //Clock and Write Enable
+   input [2:0] wa3, ra1, ra2, //Write Adress, Register Data 1 and Register Data 2
+   output reg [7:0] rd1, rd2); //Register Adress 1 and Register Adress 2
+
+   reg [7:0]  $0, $1, $2, $3, $4, $5, $6, $7; // Register
+		
+	always @(posedge clk) begin
+		// Registering
+		$0 = 0;
+		if ((we3 == 1) & (wa3 == 1))
+			$1 = wd3;
+		if ((we3 == 1) & (wa3 == 2))
+			$2 = wd3;
+		if ((we3 == 1) & (wa3 == 3))
+			$3 = wd3;
+		if ((we3 == 1) & (wa3 == 4))
+			$4 = wd3;
+		if ((we3 == 1) & (wa3 == 5))
+			$5 = wd3;
+		if ((we3 == 1) & (wa3 == 6))
+			$6 = wd3;
+		if ((we3 == 1) & (wa3 == 7))
+			$7 = wd3;
+	end
+	
+	always @(*) begin
+		// MUX 1
+		// Register Data 1 Values
+		case (ra1)
+			0: rd1 = 0;
+			1: rd1 = $1;
+			2: rd1 = $2;
+			3: rd1 = $3;
+			4: rd1 = $4;
+			5: rd1 = $5;
+			6: rd1 = $6;
+			7: rd1 = $7;
+		endcase
+		
+		//MUX 2
+		// Register Data 2 Values
+		case (ra2)
+			0: rd2 = 0;
+			1: rd2 = $1;
+			2: rd2 = $2;
+			3: rd2 = $3;
+			4: rd2 = $4;
+			5: rd2 = $5;
+			6: rd2 = $6;
+			7: rd2 = $7;
+		endcase
+	end
+
+endmodule

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Mod_Teste">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Mod_Teste|somador:meu_somador|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_npi.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

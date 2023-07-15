@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'divide_frequency:clk_1hz|Clk_1Hz'
+Slack : -9.303
+TNS   : -497.830
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -8.157
+TNS   : -315.931
+
+Type  : Slow Model Setup 'RomInstMem:instr_mem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -6.448
+TNS   : -50.551
+
+Type  : Slow Model Hold 'RomInstMem:instr_mem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -4.316
+TNS   : -33.020
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -2.505
+TNS   : -2.505
+
+Type  : Slow Model Hold 'divide_frequency:clk_1hz|Clk_1Hz'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'RomInstMem:instr_mem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -2.772
+TNS   : -240.486
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.000
+TNS   : -224.916
+
+Type  : Slow Model Minimum Pulse Width 'divide_frequency:clk_1hz|Clk_1Hz'
+Slack : -0.500
+TNS   : -64.000
+
+Type  : Fast Model Setup 'divide_frequency:clk_1hz|Clk_1Hz'
+Slack : -4.393
+TNS   : -232.968
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -3.784
+TNS   : -104.701
+
+Type  : Fast Model Setup 'RomInstMem:instr_mem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -2.676
+TNS   : -20.790
+
+Type  : Fast Model Hold 'RomInstMem:instr_mem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -2.325
+TNS   : -17.914
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -1.552
+TNS   : -1.552
+
+Type  : Fast Model Hold 'divide_frequency:clk_1hz|Clk_1Hz'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.000
+TNS   : -224.916
+
+Type  : Fast Model Minimum Pulse Width 'RomInstMem:instr_mem|altsyncram:altsyncram_component|altsyncram_mq81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -0.988
+TNS   : -76.460
+
+Type  : Fast Model Minimum Pulse Width 'divide_frequency:clk_1hz|Clk_1Hz'
+Slack : -0.500
+TNS   : -64.000
+
+------------------------------------------------------------
